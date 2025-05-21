@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <script> 
+    //建立物件 
+    let man=new Object(); 
+    man.age=18; 
+    man.name="小劉"; 
+    man.talk=function(){ 
+    //使用this 
+    console.log("Hello world", this.name,"年齡", this.age); 
+    }; 
+    //使用物件 
+    document.write("Hello world"+"<br>"); 
+    if (man.age >= 20) {
+        document.write("我成年了。<br>")
+    }else{
+        document.write("我還未成年。<br>")
+    }
+    </script> 
+      <script> 
+        var x = prompt("輸入年齡",""); 
+        if (x >= 18){ 
+        console.log("成年!"); 
+        window.alert("成年!"); 
+        }
+        else{ 
+        console.log("未成年!"); 
+        window.alert("未成年!"); 
+        } 
+        </script>
+    </body>
+</html>

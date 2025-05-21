@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div id="grades-list"></div>
+    <div id="sum"></div>
+    <div id="average"></div>
+    <script> 
+        // 建立資料
+        let grades = [70, 50, 84]; 
+        grades.push(35); 
+        grades.push(100); 
+    
+        // 計算總和
+        let sum = 0;
+        for (let i = 0; i < grades.length; i++) { 
+            sum += grades[i];
+        }
+    
+        // 計算平均數
+        let average = sum / grades.length;
+    
+        // 顯示成績
+        let output = "";
+        for (let i = 0; i < grades.length; i++) { 
+            output += grades[i] + "<br>"; // Append the grades with a line break
+        }
+    
+        // 顯示成績列表
+        document.getElementById("grades-list").innerHTML = output;
+    
+        // 顯示總和
+        document.getElementById("sum").innerHTML = "Total Sum: " + sum;
+    
+        // 顯示平均數
+        document.getElementById("average").innerHTML = "Average: " + average.toFixed(2); // 保留兩位小數
+        </script> 
+</body>
+</html>
