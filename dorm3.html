@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>花卉介紹</title>
+</head>
+<body>
+  <h1>花卉介紹</h1>
+
+  <div> 
+    <span onclick="changeToHydrangea();">1. 繡球花</span> 
+    <span onclick="changeToOncidium();">2. 文心蘭</span> 
+  </div> 
+
+  <br/> 
+
+  <div id="hydrangea">
+    <h2>繡球花</h2>
+    <p>繡球花原產於日本，是一種常見的園藝裝飾花，花色一般包括紅、藍、紫色，會因所在環境的酸鹼度引起花色變化，所以也可作為天然的酸鹼指示劑，其在酸性的土壤偏向青色、中性~鹼性的土壤則偏向紅色。夏季開花，花期5-8月[2]。也常用於製作乾花</p>
+    <img src="cc5cca4fcf5b8c8b1b998b489e65cff8-e1583291062538.jpg">
+  </div> 
+
+  <div id="oncidium" style="display:none">
+    <h2>文心蘭</h2>
+    <p>文心蘭又稱為跳舞蘭，英名為Oncidium，盛開時花朵唇辦宛如一群婆娑起舞的曼妙女郎之裙擺而得此美名。 花色有鮮艷的金黃色、赭紅色、米色、粉紅色或是褐色斑點、褐色花紋等變化。 文心蘭全年均可開花，盛產期集中在秋天及春天二季，有些品種一個假球莖可抽2支花梗以上，花期長達1~2個月</p>
+    <img src="1-S__59940879_0.jpg">
+
+  <script> 
+    function changeToOncidium(){
+      let hydrangeaDiv = document.querySelector("#hydrangea"); 
+      let oncidiumDiv = document.querySelector("#oncidium");
+      hydrangeaDiv.style.display = "none"; 
+      oncidiumDiv.style.display = "block"; 
+    }
+
+    function changeToHydrangea(){
+      let oncidiumDiv = document.querySelector("#oncidium"); 
+      let hydrangeaDiv = document.querySelector("#hydrangea");
+      hydrangeaDiv.style.display = "block"; 
+      oncidiumDiv.style.display = "none"; 
+    }
+  </script>
+</body>
+</html>
